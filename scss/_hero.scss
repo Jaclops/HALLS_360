@@ -1,25 +1,14 @@
 body {
     .hero {
-    /* Flexbox stuff */
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    /* Background styles */
-    // background-size: cover;
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-
-    // position: relative;
-    // left: 0;
-    // top: 0;
-    // z-index: -1;
+    position: relative;
+    left: 0;
+    top: -80px;
     .wrapper {
       width: 100%;
       height: 100vh;
       .slick {
         .slick-item {
+          overflow: hidden;
           img{
             margin: 0 auto;
             width: 100%;
@@ -33,14 +22,22 @@ body {
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
-        top: -125px;
+        top: -175px;
+        height: 231px;
         p {
           font-size: 24px;
           color: white;
+          position: absolute;
+          top: 50px;
+          left: 75px;
+          line-height: 35px;
         }
         h1 {
           font-size: 30px;
           color: #19276D;
+          position: absolute;
+          right: 50px;
+          top: 90px;
         }
       }
     }
