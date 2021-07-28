@@ -122,8 +122,8 @@
 .slick-dots
 {
     position: absolute;
-    /* CHANGE FROM -25PX TO 100PX */
-    bottom: 100px;
+    /* CHANGE FROM -25PX TO 115PX */
+    bottom: 115px;
 
     display: block;
 

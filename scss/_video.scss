@@ -1,12 +1,21 @@
 body {
   .video {
+    margin-top: 470px;
     .wrapper{
-      img{
-
+      height: 100%;
+      width: 100%;
+      position: relative;
+      img.focate{
+        position: absolute;
+        top: -40px;
+        left: 0px;
       }
-      video {
-
+      img.btn {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        }
       }
     }
   }
-}

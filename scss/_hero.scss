@@ -17,27 +17,28 @@ body {
       }
 
       .breakers {
+        pointer-events: none;
         background-image: url("../img/breaker_1.png");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
-        top: -175px;
-        height: 231px;
+        top: -210px;
+        height: 310px;
         p {
           font-size: 24px;
           color: white;
           position: absolute;
-          top: 50px;
-          left: 75px;
+          top: 70px;
+          left: 100px;
           line-height: 35px;
         }
         h1 {
           font-size: 30px;
           color: #19276D;
           position: absolute;
-          right: 50px;
-          top: 90px;
+          right: 100px;
+          top: 140px;
         }
       }
     }
