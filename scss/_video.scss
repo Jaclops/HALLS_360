@@ -5,6 +5,10 @@ body {
       height: 100%;
       width: 100%;
       position: relative;
+      overflow: hidden;
+      video{
+
+      }
       img.focate{
         position: absolute;
         top: -40px;
