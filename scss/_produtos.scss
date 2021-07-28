@@ -22,26 +22,49 @@ body {
           left: 30px;
         }
       }
-      .card{
-        width: 547px;
-        height: 198px;
-        position: relative;
-        background-image: url("../img/product_background.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        img.product{
-          position: absolute;
-          top: 43px;
-          left: 99px;
+      .grid-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        height: 100%;
+        .card{
+          width: 547px;
+          height: 198px;
+          position: relative;
+          background-image: url("../img/product_background.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin: 50px auto;
+          img.product{
+            position: absolute;
+            top: 43px;
+            left: 99px;
+          }
+          a{
+            position: absolute;
+            top: 85px;
+            right: 45px;
+          }
         }
-        a{
-          position: absolute;
-          top: 85px;
-          right: 45px;
+        .product-btn{
+          width: 632px;
+          height: 173px;
+          font-size: 30px;
+          color: #113678;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 320px;
+          background-image: url("../img/product_btn.png");
+          background-repeat: no-repeat;
+          background-size: contain;
         }
-      }
-      a {
-
+        .btn{
+          text-decoration: none;
+          position: relative;
+          top: 50%;
+          left: 30px;
+          transform: translateY(-50%);
+        }
       }
     }
   }
