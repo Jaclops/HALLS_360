@@ -1,0 +1,107 @@
+body{
+  .box-breathing{
+    position: relative;
+    top: -470px;
+    .wrapper{
+      width: 100%;
+      .breakers{
+        width: 836px;
+        height: 356px;
+        background-image: url("../img/breaker_8.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+        position: absolute;
+        top: -240px;
+        right: 0px;
+        h1{
+          font-size: 72px;
+          color: white;
+          word-spacing: 20px;
+          position: absolute;
+          top: 110px;
+          left: 70px;
+          transform: rotate(-5deg);
+        }
+      }
+      .box-background-1{
+        height: 1200px;
+        background-image: url("../img/box_breathing_background_1.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        img{
+          position: absolute;
+          top: 280px;
+          left: 350px;
+        }
+      }
+      .breakers-2{
+        height: 400px;
+        background-image: url("../img/breaker_9.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -100px;
+        p{
+          font-size: 36px;
+          color: white;
+          line-height: 50px;
+          position: absolute;
+          top: 170px;
+          left: 160px;
+        }
+      }
+      .box-background-2{
+        z-index: -1;
+        height: 686px;
+        background-image: url("../img/box_breathing_background_2.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -200px;
+      }
+      .box-instructions{
+        position: relative;
+        top: -220px;
+        background-color: purple;
+        width: 100%;
+        height: 965px;
+        ul{
+          font-family: 'Azo Sans Lt';
+          font-size: 36px;
+          color: white;
+          list-style: none;
+          line-height: 50px;
+          position: absolute;
+          top: 100px;
+          left: 100px;
+          li{
+
+          }
+        }
+        .slick-2 {
+          // position: absolute !important;
+          // left: 500px;
+          .slick-item {
+            overflow: hidden;
+            img{
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .breakers-3{
+        p{
+
+        }
+        img{
+
+        }
+      }
+    }
+  }
+}
