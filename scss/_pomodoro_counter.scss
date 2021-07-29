@@ -1,0 +1,22 @@
+body{
+  .pomodoro-counter{
+    position: relative;
+    top: -450px;
+    .wrapper{
+      height: 670px;
+      background-image: url("../img/breaker_6.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      h1{
+        font-size: 48px;
+        color: white;
+        position: absolute;
+        top: 250px;
+        left: 230px;
+        line-height: 100px;
+      }
+
+    }
+  }
+}

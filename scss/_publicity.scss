@@ -1,0 +1,18 @@
+body{
+  .publicity{
+    position: relative;
+    top: -450px;
+    .wrapper{
+      width: 100%;
+      height: 1224px;
+      background-image: url("../img/pub_1_background.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      img{
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+  }
+}
