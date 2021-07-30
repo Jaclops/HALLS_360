@@ -74,6 +74,9 @@ body {
             position: absolute;
             top: 85px;
             right: 45px;
+            img:hover{
+              transform: scale(1.1);
+            }
             @include mobile{
               top: 42px;
               right: 25px;
@@ -101,6 +104,9 @@ body {
             position: absolute;
             top: 630px;
             right: 0px;
+            .btn:hover{
+              text-decoration: underline;
+            }
           }
         }
         .btn{
