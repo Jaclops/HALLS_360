@@ -1,7 +1,7 @@
 body {
   .pomodoro{
     position: relative;
-    top: -10px;
+    top: -17px;
     @include mobile{
       top: -523px;
     }
@@ -53,8 +53,8 @@ body {
         h1{
           font-family: 'Azo Sans Md Italic';
           position: absolute;
-          top: 80px;
-          left: 400px;
+          top: 100px;
+          left: 300px;
           font-size: 48px;
           color: white;
           @include mobile{
@@ -67,7 +67,7 @@ body {
           font-family: 'Azo Sans Tn';
           position: absolute;
           top: 250px;
-          left: 636px;
+          left: 536px;
           font-size: 36px;
           color: white;
           @include mobile{
@@ -92,7 +92,7 @@ body {
         img{
           position: absolute;
           top: 350px;
-          left: 780px;
+          left: 580px;
           @include mobile{
             width: 70px;
             height: 107px;
@@ -150,7 +150,7 @@ body {
           background-position: center center;
           background-repeat: no-repeat;
           position: relative;
-          top: -660px;
+          top: -710px;
           @include mobile{
             height: 500px;
             top: -230px;
@@ -162,8 +162,8 @@ body {
             line-height: 65px;
             text-align: center;
             position: absolute;
-            top: 390px;
-            left: 520px;
+            top: 420px;
+            left: 320px;
             list-style-type: none;
             @include mobile{
               font-size: 14px;

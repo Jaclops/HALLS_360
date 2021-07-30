@@ -1,5 +1,6 @@
 body {
     .hero {
+    z-index: 1;
     position: relative;
     left: 0;
     top: -80px;
@@ -28,11 +29,11 @@ body {
         z-index: 2;
         p {
           font-family: 'Azo Sans Regular';
-          font-size: 24px;
+          font-size: 22px;
           color: white;
           position: absolute;
           top: 60px;
-          left: 100px;
+          left: 80px;
           line-height: 35px;
           word-spacing: 5px;
           letter-spacing: 5px;
@@ -44,7 +45,7 @@ body {
           font-size: 30px;
           color: #19276D;
           position: absolute;
-          right: 100px;
+          right: 30px;
           top: 130px;
           transform: rotate(2deg);
           word-spacing: 5px;
