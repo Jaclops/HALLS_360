@@ -24,6 +24,10 @@ $(document).ready(function(){
   autoplaySpeed: 4000,
   });
 
+  $('.btn-menu').on('click', function(){
+    $('.submenu').toggleClass('show');
+  });
+
   $(".myInstance").Circlebar({
     startValue: 0,
     maxValue: 60,
@@ -38,9 +42,7 @@ $(document).ready(function(){
 
   });
 
-  $('.btn-menu').on('click', function(){
-    $('.submenu').toggleClass('show');
-  });
+  
 });
 
 (function(){
