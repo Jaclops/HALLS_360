@@ -1,11 +1,15 @@
 $(document).ready(function(){
   $('.slick').slick({
   arrows: false,
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   fade: true,
-  cssEase: 'linear'
+  cssEase: 'linear',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
   });
   $('.slick-2').slick({
   arrows: false,
@@ -17,12 +21,26 @@ $(document).ready(function(){
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
+  });
+
+  $(".myInstance").Circlebar({
+    startValue: 0,
+    maxValue: 60,
+    counter: 1000,
+    triggerPercentage:false,
+    type:"timer",
+    dialWidth: 5,
+    fontSize:"20px",
+    fontColor:"rgb(135, 206, 235)",
+    skin:"firecircle",
+    size:"150px"
+
   });
 
   $('.btn-menu').on('click', function(){
-    $('.submenu').toggleClass('show')
-  })
+    $('.submenu').toggleClass('show');
+  });
 });
 
 (function(){
