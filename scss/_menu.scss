@@ -28,8 +28,8 @@
     }
 
   }
-  
-  
+
+
 }
 .navbar{
     background-color: rgba(0,0,0,0.4);
@@ -42,18 +42,26 @@
     text-align: left;
     vertical-align: -webkit-baseline-middle;
     list-style: none;
-    
+
 
     ul{
-      
+
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      @include mobile{
+        top: 25%;
+        transform: translateY(-25%);
+      }
 
-      
+
 
       li{
         padding: 10px 0;
+        .historia{
+          position: relative;
+          left: 10px;
+        }
 
         button{
           text-decoration: none;
@@ -63,11 +71,14 @@
           outline: none;
           background-color: transparent;
           font-family: 'Azo Sans Bold Italic';
-          
+          @include mobile{
+            font-size: 30px;
+          }
+
           &:hover{
             text-decoration: underline;
           }
-          
+
         }
 
         .submenu{
@@ -83,11 +94,14 @@
             color: $light-blue;
             padding-left: 12%;
             padding-bottom: 15%;
-            
+            @include mobile{
+              font-size: 20px;
+            }
 
-      
+
+
         }
-       
+
       }
 
         &.show{
@@ -102,11 +116,14 @@
           text-decoration: none;
           font-size: 64px;
           font-family: 'Azo Sans Bold Italic';
+          @include mobile{
+            font-size: 30px;
+          }
 
           &:hover{
             text-decoration: underline;
           }
-         
+
         }
       }
 
