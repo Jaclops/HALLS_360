@@ -23,6 +23,18 @@ $(document).ready(function(){
   autoplay: true,
   autoplaySpeed: 4000,
   });
+  $(".myInstance").Circlebar({
+    startValue: 0,
+    maxValue: 60,
+    counter: 1000,
+    triggerPercentage:false,
+    type:"timer",
+    dialWidth: 5,
+    fontSize:"20px",
+    fontColor:"rgb(135, 206, 235)",
+    skin:"firecircle",
+    size:"150px"
+  })
 });
 
 (function(){
