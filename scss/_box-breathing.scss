@@ -8,6 +8,9 @@ body{
     .wrapper{
       width: 100%;
       height: 2800px;
+      @include mobile{
+        height: 780px;
+      }
       .breakers{
         width: 836px;
         height: 356px;
@@ -136,10 +139,23 @@ body{
           position: relative;
           top: 40px;
           left: 350px;
+          @include mobile{
+            top: 10px;
+            left: 120px;
+          }
           .slick-item {
             overflow: hidden;
+            @include mobile{
+              width: 219px;
+              height: 215px;
+            }
             img{
               margin: 0 auto;
+              @include mobile{
+                width: 219px;
+                height: 215px;
+
+              }
             }
           }
         }
@@ -153,6 +169,10 @@ body{
         position: relative;
         top: -60px;
         right: 0px;
+        @include mobile{
+          height: 129px;
+          top: 36px;
+        }
         p{
           font-family: 'Azo Sans Regular';
           font-size: 36px;
@@ -162,11 +182,23 @@ body{
           position: absolute;
           top: 100px;
           left: 560px;
+          @include mobile{
+            font-size: 12px;
+            line-height: 20px;
+            top: 35px;
+            left: 140px;
+          }
         }
         img{
           position: absolute;
           top: 50px;
           left: -5px;
+          @include mobile{
+            width: 165px;
+            height: 156px;
+            top: -24px;
+            left: -5px;
+          }
         }
       }
     }
