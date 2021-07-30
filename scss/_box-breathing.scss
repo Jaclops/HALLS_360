@@ -7,6 +7,7 @@ body{
     }
     .wrapper{
       width: 100%;
+      height: 2800px;
       .breakers{
         width: 836px;
         height: 356px;
@@ -122,7 +123,7 @@ body{
           list-style: none;
           line-height: 50px;
           position: absolute;
-          top: 100px;
+          top: 130px;
           left: 100px;
           @include mobile{
             font-size: 12px;
@@ -132,7 +133,9 @@ body{
           }
         }
         .slick-2 {
-          left: 50px;
+          position: relative;
+          top: 40px;
+          left: 350px;
           .slick-item {
             overflow: hidden;
             img{
@@ -141,12 +144,29 @@ body{
           }
         }
       }
-      .breakers-3{
+     .breakers-3{
+        width: 100%;
+        height: 398px;
+        background-image: url("../img/breaker_10.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -60px;
+        right: 0px;
         p{
-
+          font-family: 'Azo Sans Regular';
+          font-size: 36px;
+          text-align: right;
+          color: white;
+          line-height: 65px;
+          position: absolute;
+          top: 100px;
+          left: 560px;
         }
         img{
-
+          position: absolute;
+          top: 50px;
+          left: -5px;
         }
       }
     }
