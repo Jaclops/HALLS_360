@@ -23,6 +23,11 @@ $(document).ready(function(){
   autoplay: true,
   autoplaySpeed: 4000,
   });
+
+  $('.btn-menu').on('click', function(){
+    $('.submenu').toggleClass('show');
+  });
+
   $(".myInstance").Circlebar({
     startValue: 0,
     maxValue: 60,
@@ -34,7 +39,10 @@ $(document).ready(function(){
     fontColor:"rgb(135, 206, 235)",
     skin:"firecircle",
     size:"150px"
-  })
+
+  });
+
+  
 });
 
 (function(){
@@ -50,3 +58,8 @@ function transformFormat(){
 }
 img.addEventListener('click', transformFormat);
 })()
+
+
+
+
+
