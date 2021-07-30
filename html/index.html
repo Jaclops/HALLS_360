@@ -68,9 +68,15 @@
   <header>
     <div class="wrapper">
 			<div class="grid-container">
-				<div class="grid-item">
-	      	<a href="#"><img src="../img/menu_icon.png" alt="Open menu icon"></a>
-				</div>
+				
+          <nav class="menu">
+	      	<a href="#">
+            <img class="toggler" src="../img/icon-menu.png" alt="">
+            <img class="toggler" src="../img/icon-menu.png" alt="">
+            <img class="toggler" src="../img/icon-menu.png" alt="">
+          </a>
+          </nav>
+				
 				<div class="grid-item">
 	      	<img src="../img/logo_halls.png" alt="Logotipo Halls">
 				</div>
@@ -83,21 +89,24 @@
   </header>
 
   <!-- MENU -->
-  <section class="menu">
-    <div class="wrapper">
-      <a href="#"><img src="../img/menu_closing_icon.png" alt="Menu closing icon"></a>
-
-      </style>
-      <div class="menu_overlay">
+  
+      <div class="navbar">
         <ul>
-          <li><a href="#">A Nossa História</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Timers</a></li>
-          <li><a href="#">Parcerias</a></li>
+          <li><a href="">A NOSSA HISTÓRIA</a></li>
+
+          <li>
+            <button type="button">PRODUTOS</button>
+            <ul class="submenu">
+              <li><a class="subitem" href="">OS NOSSOS HALLS</a></li>
+              <li><a class="subitem" href="">MERCH</a></li>
+            </ul>
+          </li>
+
+          <li> <a href="">TIMERS</a></li>
+          <li><a href="">PARCERIAS</a></li>
         </ul>
       </div>
-    </div>
-  </section>
+  
 
   <!-- HERO -->
   <section class="hero">
