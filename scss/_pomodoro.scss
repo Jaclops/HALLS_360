@@ -2,18 +2,28 @@ body {
   .pomodoro{
     position: relative;
     top: -10px;
+    @include mobile{
+      top: -523px;
+    }
     .wrapper{
       width: 100%;
-
       .background{
         background-image: url("../img/pomodoro_background_1.png");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         height: 1517px;
+        @include mobile{
+        height: 720px;
+        }
         img{
           position: absolute;
           left: 137px;
+          @include mobile{
+            width: 162px;
+            height: 154px;
+            left: 15px;
+          }
         }
       }
       .breakers{
@@ -24,28 +34,47 @@ body {
         background-repeat: no-repeat;
         height: 405px;
         top: -350px;
-        // left: ;
         position: relative;
+        @include mobile{
+          height: 102px;
+          top: -450px;
+        }
         img{
           position: absolute;
           top: 25px;
           left: 25px;
+          @include mobile{
+            width: 73px;
+            height: 80px;
+            top: -20px;
+            left: 0px;
+          }
         }
         h1{
+          font-family: 'Azo Sans Md Italic';
           position: absolute;
           top: 80px;
           left: 400px;
           font-size: 48px;
           color: white;
+          @include mobile{
+            top: 12px;
+            left: 80px;
+            font-size: 18px;
+          }
         }
         h2{
+          font-family: 'Azo Sans Tn';
           position: absolute;
           top: 250px;
           left: 636px;
           font-size: 36px;
           color: white;
-          // width: 1002px;
-          // height: 122px;
+          @include mobile{
+            top: 53px;
+            left: 130px;
+            font-size: 14px;
+          }
         }
       }
       .background-2{
@@ -56,10 +85,20 @@ body {
         background-position: center center;
         background-repeat: no-repeat;
         height: 2535px;
+        @include mobile{
+          top: -500px;
+          height: 1268px;
+        }
         img{
           position: absolute;
           top: 200px;
           left: 780px;
+          @include mobile{
+            width: 70px;
+            height: 107px;
+            top: 190px;
+            left: 180px;
+          }
         }
         .breakers-2{
           width: 995px;
@@ -69,14 +108,26 @@ body {
           background-size: contain;
           position: relative;
           top: 1050px;
+          @include mobile{
+            width: 398px;
+            height: 107px;
+            top: 600px;
+          }
           p{
+            font-family: 'Azo Sans Regular';
             position: absolute;
             top: 15px;
-            left: 120px;
+            left: 30px;
             font-size: 36px;
             color: white;
             text-align: right;
             line-height: 50px;
+            @include mobile{
+              top: 0px;
+              left: 10px;
+              font-size: 14px;
+              line-height: 25px;
+            }
           }
         }
       }
@@ -88,6 +139,10 @@ body {
         background-repeat: no-repeat;
         position: relative;
         top: -250px;
+        @include mobile{
+          height: 1592px;
+          top: -450px;
+        }
         .breakers-3{
           height: 1709px;
           background-image: url("../img/breaker_5.png");
@@ -96,7 +151,12 @@ body {
           background-repeat: no-repeat;
           position: relative;
           top: -660px;
+          @include mobile{
+            height: 500px;
+            top: -230px;
+          }
           ul{
+            font-family: 'Azo Sans Regular';
             font-size: 36px;
             color: white;
             line-height: 65px;
@@ -105,6 +165,12 @@ body {
             top: 390px;
             left: 520px;
             list-style-type: none;
+            @include mobile{
+              font-size: 14px;
+              line-height: 25px;
+              top: 110px;
+              left: 50px;
+            }
           }
         }
         picture{
@@ -112,21 +178,42 @@ body {
             position: absolute;
             top: 560px;
             right: 0px;
+            @include mobile{
+              width: 147px;
+              height: 8px;
+              top: 100px;
+            }
           }
           img:nth-of-type(2){
             position: absolute;
             top: 2700px;
             left: 0px;
+            @include mobile{
+              width: 222px;
+              height: 8px;
+              top: 1200px;
+            }
           }
           img:nth-of-type(3){
             position: absolute;
             bottom: 50px;
             right: 0px;
+            @include mobile{
+              width: 47px;
+              height: 569px;
+              bottom: 20px;
+            }
           }
           img:nth-of-type(4){
             position: absolute;
             bottom: 50px;
             left: 540px;
+            @include mobile{
+              width: 9px;
+              height: 132px;
+              bottom: 20px;
+              left: 150px;
+            }
           }
         }
       }

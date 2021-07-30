@@ -1,6 +1,6 @@
 body {
   header {
-    z-index: 2;
+    z-index: 99;
     position: sticky;
     top: 0px;
     .wrapper {
@@ -35,7 +35,15 @@ body {
             top: 25%;
             transform: translateX(-50%);
           }
+          @include mobile {
+            img{
+              width: 112px;
+              height: 29px;
+              top: 25px;
+            }
+          }
         }
+
         .grid-item:nth-of-type(3){
           position: relative;
           a {

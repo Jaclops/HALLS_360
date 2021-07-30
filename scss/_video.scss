@@ -1,25 +1,44 @@
 body {
   .video {
-    margin-top: 470px;
+    position: relative;
+    top: 360px;
+    @include mobile{
+      top: -510px;
+    }
     .wrapper{
       height: 100%;
       width: 100%;
       position: relative;
-      overflow: hidden;
       video{
-
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        @include mobile{
+          width: 100%;
+        }
       }
       img.focate{
         position: absolute;
-        top: -40px;
+        top: -30px;
         left: 0px;
+        z-index: 3;
+        @include mobile{
+          top: 10px;
+          width: 154px;
+          height: 108px;
+        }
       }
       img.btn {
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translateX(-50%);
+        @include mobile{
+          top: 10px;
+          left: 25%;
+          transform: scale(0.25);
         }
       }
     }
   }
+}

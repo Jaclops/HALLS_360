@@ -1,7 +1,10 @@
 body{
   .box-breathing{
     position: relative;
-    top: -470px;
+    top: -770px;
+    @include mobile{
+      top: -1070px;
+    }
     .wrapper{
       width: 100%;
       .breakers{
@@ -14,7 +17,13 @@ body{
         position: absolute;
         top: -240px;
         right: 0px;
+        @include mobile{
+          width: 334px;
+          height: 142px;
+          top: -180px;
+        }
         h1{
+          font-family: 'Azo Sans Regular';
           font-size: 72px;
           color: white;
           word-spacing: 20px;
@@ -22,6 +31,13 @@ body{
           top: 110px;
           left: 70px;
           transform: rotate(-5deg);
+          @include mobile{
+            font-size: 24px;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            top: 50px;
+            left: 40px;
+          }
         }
       }
       .box-background-1{
@@ -31,10 +47,20 @@ body{
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
+        @include mobile{
+          height: 480px;
+          top: -80px;
+        }
         img{
           position: absolute;
           top: 280px;
           left: 350px;
+          @include mobile{
+            width: 324px;
+            height: 180px;
+            top: 100px;
+            left: 80px;
+          }
         }
       }
       .breakers-2{
@@ -45,13 +71,24 @@ body{
         background-repeat: no-repeat;
         position: relative;
         top: -100px;
+        @include mobile{
+          height: 160px;
+          top: -130px;
+        }
         p{
+          font-family: 'Azo Sans Regular';
           font-size: 36px;
           color: white;
           line-height: 50px;
           position: absolute;
           top: 170px;
           left: 160px;
+          @include mobile{
+            font-size: 14px;
+            line-height: 22px;
+            top: 70px;
+            left: 15px;
+          }
         }
       }
       .box-background-2{
@@ -63,15 +100,23 @@ body{
         background-repeat: no-repeat;
         position: relative;
         top: -200px;
+        @include mobile{
+          height: 274px;
+          top: -180px;
+        }
       }
       .box-instructions{
         position: relative;
         top: -220px;
-        background-color: purple;
+        background-color: #372B52;
         width: 100%;
         height: 965px;
+        @include mobile{
+          top: -180px;
+          height: 386px;
+        }
         ul{
-          font-family: 'Azo Sans Lt';
+          font-family: 'Azo Sans Regular';
           font-size: 36px;
           color: white;
           list-style: none;
@@ -79,13 +124,15 @@ body{
           position: absolute;
           top: 100px;
           left: 100px;
-          li{
-
+          @include mobile{
+            font-size: 12px;
+            line-height: 25px;
+            top: 40px;
+            left: -10px;
           }
         }
         .slick-2 {
-          // position: absolute !important;
-          // left: 500px;
+          left: 50px;
           .slick-item {
             overflow: hidden;
             img{
