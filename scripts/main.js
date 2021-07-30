@@ -19,6 +19,10 @@ $(document).ready(function(){
   autoplay: true,
   autoplaySpeed: 2000,
   });
+
+  $('.btn-menu').on('click', function(){
+    $('.submenu').toggleClass('show')
+  })
 });
 
 (function(){
@@ -34,6 +38,8 @@ function transformFormat(){
 }
 img.addEventListener('click', transformFormat);
 })()
+
+
 
 
 
